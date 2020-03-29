@@ -1,0 +1,45 @@
+{
+  "name": "getstat",
+  "version": "1.0.0",
+  "description": "A CLI tool for getting stats information of NPM packages",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "test": "npm i -g && getstat",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "keywords": [
+    "cli",
+    "stat",
+    "typescript",
+    "nodejs",
+    "package",
+    "review"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saqibnoorani/getstat.git"
+  },
+  "author": "Najmus Saqib",
+  "license": "MIT",
+  "bin": {
+    "getstat": "./lib/index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "commander": "^2.19.0",
+    "figlet": "^1.2.1",
+    "moment": "^2.24.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.1",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}
