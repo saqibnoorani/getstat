@@ -1,33 +1,34 @@
-"use strict";
 var https = require('https');
 var npmjsURL = "api.npmjs.org";
 var npmsURL = "api.npms.io";
-function getQuickDetails(name, endDate, currentDate, callback) {
+
+
+function getQuickDetails(name: string, endDate: string, currentDate: string, callback: (arg0: any) => void) {
     var path = '/downloads/point/' + endDate + ':' + currentDate + '/' + name;
     return https.get({
         host: npmjsURL,
         path: path
-    }, function (response) {
+    }, function (response: any) {
         var body = '';
-        response.on('data', function (value) {
+        response.on('data', (value: any) => {
             body += value;
         });
-        response.on('end', function () {
+        response.on('end', () => {
             callback(JSON.parse(body));
         });
     });
 }
-function getFullDetails(name, callback) {
+function getFullDetails(name: string, callback: (arg0: any) => void) {
     var path = '/v2/package/' + name;
     return https.get({
         host: npmsURL,
         path: path
-    }, function (response) {
+    }, (response: any) => {
         var body = '';
-        response.on('data', function (value) {
+        response.on('data', (value: any) => {
             body += value;
         });
-        response.on('end', function () {
+        response.on('end', () => {
             callback(JSON.parse(body));
         });
     });
