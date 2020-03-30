@@ -28,28 +28,13 @@ CLI to get stats of the NPM Packages in your terminal
 
   
 
-*-V, --version output the version number   
--p, --package <type> Package Name   
+
+-d, --details get github details.  
 -h, --help output usage information*
 
   
 
-**Example**: `getstat aurelia`
+**Example**: `getstat react -d`
 
-  
-
-**Result:**
-
-  
-
-Package : aurelia
-
-  
-
-Downloads : 20119
- Start Date : 29-03-19 
- End Date : 29-03-20
-
-  
 
 [Github](https://github.com/saqibnoorani/getstat)
