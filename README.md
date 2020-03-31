@@ -1,10 +1,17 @@
-# getstat
 
-CLI to get stats of the NPM Packages in your terminal
+# covid19
 
   
 
-**Get Stats Of NPM Packages**
+Get coronavirus updates in your terminal.
+
+  
+
+  
+
+**Get live updates of corona virus**
+
+  
 
   
 
@@ -12,7 +19,11 @@ CLI to get stats of the NPM Packages in your terminal
 
   
 
-*npm install getstat -g*
+  
+
+*npm install covid19-g*
+
+  
 
   
 
@@ -20,7 +31,11 @@ CLI to get stats of the NPM Packages in your terminal
 
   
 
-    getstat<package name>
+  
+
+covid19 <country name>
+
+  
 
   
 
@@ -28,13 +43,19 @@ CLI to get stats of the NPM Packages in your terminal
 
   
 
-
--d, --details get github details.  
--h, --help output usage information*
+  
+  
+ -V, --version  output the version number
+  -a, --all      Get Summary details
+  -h, --help     output usage information
 
   
 
-**Example**: `getstat react -d`
+  
 
+**Example**: `covid19 italy` or `covid19 -a`
 
-[Github](https://github.com/saqibnoorani/getstat)
+  
+  
+
+[Github](https://github.com/saqibnoorani/covid19)
