@@ -8,7 +8,7 @@ CLI to get stats of the NPM Packages in your terminal
 
   
 
-**Install command:**
+**Install command:** 
 
   
 

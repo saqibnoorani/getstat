@@ -9,10 +9,12 @@ const api = require('./package-details');
 var currentDate = moment().format("YYYY-MM-DD");
 var endDate = moment().subtract(1, "year").format("YYYY-MM-DD");
 clear();
-console.log(
+console.log( 
   chalk.blue(
     figlet.textSync('Get Stat', {
-      horizontalLayout: 'full'
+      font: 'Ghost',
+      horizontalLayout: 'full',
+      verticalLayout: 'default'
     })
   )
 );
@@ -87,7 +89,7 @@ function fullStats(data: any) {
 }
 
 program
-  .version('1.2.0')
+  .version('1.2.1')
   .description("Get Stats Of NPM Packages")
   .option('-d, --details', 'Get Full Details')
 

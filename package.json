@@ -1,6 +1,6 @@
 {
   "name": "getstat",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A CLI tool for getting stats of NPM packages",
   "main": "./lib/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "figlet": "^1.2.1",
     "moment": "^2.24.0",
     "path": "^0.12.7"
-  },
+  }, 
   "devDependencies": {
     "@types/node": "^10.12.10",
     "nodemon": "^2.0.2",

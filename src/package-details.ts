@@ -8,7 +8,7 @@ function getQuickDetails(name: string, endDate: string, currentDate: string, cal
     return https.get({
         host: npmjsURL,
         path: path
-    }, function (response: any) {
+    }, function (response: any) { 
         var body = '';
         response.on('data', (value: any) => {
             body += value;
