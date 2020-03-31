@@ -1,40 +1,38 @@
 {
-  "name": "covid19",
+  "name": "getstat",
   "version": "1.2.0",
-  "description": "Track corona virus cases in your terminal",
+  "description": "A CLI tool for getting stats of NPM packages",
   "main": "./lib/index.js",
   "scripts": {
     "start": "nodemon src/index.ts",
     "create": "npm run build && npm run test",
     "build": "tsc -p .",
-    "test": "npm i -g && covid19",
+    "test": "npm i -g && getstat",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
   },
   "keywords": [
     "cli",
-    "corona virus",
+    "stat",
     "typescript",
     "nodejs",
     "package",
-    "covid19",
-    "coronavirus-cli",
-    "covid19-cli"
+    "review"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/saqibnoorani/covid19.git"
+    "url": "https://github.com/saqibnoorani/getstat.git"
   },
   "author": "Najmus Saqib",
   "license": "MIT",
   "bin": {
-    "covid19": "./lib/index.js"
+    "getstat": "./lib/index.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
     "clear": "^0.1.0",
-    "cli-table": "^0.3.1",
     "commander": "^2.19.0",
-    "figlet": "^1.3.0",
+    "figlet": "^1.2.1",
+    "moment": "^2.24.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
