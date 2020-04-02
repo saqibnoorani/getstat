@@ -1,5 +1,9 @@
 # getstat
 ![Node.js CI](https://github.com/saqibnoorani/getstat/workflows/Node.js%20CI/badge.svg?branch=master&event=push)
+
+
+
+
 CLI to get stats of the NPM Packages in your terminal
 
   
