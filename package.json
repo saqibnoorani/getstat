@@ -1,6 +1,6 @@
 {
   "name": "getstat",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A CLI tool for getting stats of NPM packages",
   "main": "./lib/index.js",
   "scripts": {
