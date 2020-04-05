@@ -2,7 +2,6 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const path = require('path');
 const program = require('commander');
 const moment = require('moment');
 const api = require('./package-details');
@@ -89,7 +88,7 @@ function fullStats(data: any) {
 }
 
 program
-  .version('1.2.4')
+  .version('1.2.5')
   .description("Get Stats Of NPM Packages")
   .option('-d, --details', 'Get Full Details')
 
