@@ -89,7 +89,7 @@ function fullStats(data: any) {
 }
 
 program
-  .version('1.2.3')
+  .version('1.2.4')
   .description("Get Stats Of NPM Packages")
   .option('-d, --details', 'Get Full Details')
 
