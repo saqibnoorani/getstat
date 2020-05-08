@@ -1,7 +1,7 @@
 {
   "name": "getstat",
-  "version": "1.2.5",
-  "description": "A CLI tool for getting stats of NPM packages",
+  "version": "1.2.6",
+  "description": "A CLI tool for getting Stats of NPM packages",
   "main": "./lib/index.js",
   "scripts": {
     "start": "nodemon src/index.ts",
